@@ -19,7 +19,11 @@ def divide(a, b):
     return a / b
 
 
-OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide}
+def power(a, b):
+    return a ** b
+
+
+OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide, "^": power}
 
 
 def calculate(a, op, b):
