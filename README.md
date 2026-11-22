@@ -2,6 +2,6 @@
 
 A tiny command-line calculator written in Python.
 
-Supported operations: addition, subtraction, multiplication, division.
+Supported operations: addition, subtraction, multiplication, division, power (^).
 
 Run: `python3 calculator.py`
