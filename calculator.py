@@ -19,7 +19,13 @@ def divide(a, b):
     return a / b
 
 
-OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide}
+def modulo(a, b):
+    if b == 0:
+        raise ValueError("Cannot take modulo by zero")
+    return a % b
+
+
+OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide, "%": modulo}
 
 
 def calculate(a, op, b):
