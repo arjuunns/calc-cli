@@ -23,7 +23,20 @@ def power(a, b):
     return a ** b
 
 
-OPERATIONS = {"+": add, "-": subtract, "*": multiply, "/": divide, "^": power}
+def modulo(a, b):
+    if b == 0:
+        raise ValueError("Cannot take modulo by zero")
+    return a % b
+
+
+OPERATIONS = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide,
+    "^": power,
+    "%": modulo,
+}
 
 
 def calculate(a, op, b):
